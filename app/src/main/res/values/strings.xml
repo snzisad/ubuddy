@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">UBuddy</string>
+    <string name="urbuddy">your university buddy...</string>
+    <string name="passhint">********</string>
+    <string name="enter">Enter Username or  Email</string>
+    <string name="pass">Enter Password</string>
+    <string name="sample_text">I am about to write something. But there is nothing to write. Except that I should complete this work by today.</string>
+    <string-array name="event_type">
+        <item>Select Event Type</item>
+        <item>Exam / CT</item>
+        <item>Assignment</item>
+        <item>Lab Report</item>
+    </string-array>
+    <string name="title_activity_post">PostActivity</string>
+    <string name="title_activity_event_list">EventList</string>
+</resources>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context=".View.Authentication.UniversityActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@mipmap/d">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/shadedlarch"
+            android:textSize="60sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/urbuddy"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/milkshake"
+            android:textSize="20sp"
+            android:layout_marginTop="-15dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome! Please introduce yourself."
+            android:textColor="@android:color/white"
+            android:textSize="25sp"
+            android:fontFamily="@font/milkshake"
+            android:gravity="center"
+            android:background="@drawable/welcome_bg"
+            android:layout_margin="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="20dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/universityLayout">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:text="University"
+                    android:textSize="18sp"/>
+
+                <Spinner
+                    android:id="@+id/universitySpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:dropDownSelector="@color/colorAccent"
+                    android:background="@drawable/button_bg"
+                    android:spinnerMode="dropdown"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:visibility="visible"
+                android:id="@+id/facultyLayout">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:text="Faculty"
+                    android:textSize="18sp"/>
+
+                <Spinner
+                    android:id="@+id/facultySpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:dropDownSelector="@color/colorAccent"
+                    android:background="@drawable/button_bg"
+                    android:spinnerMode="dropdown"
+                    android:layout_marginTop="10dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:visibility="visible"
+                android:id="@+id/departmentLayout">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:text="Department"
+                    android:textSize="18sp"/>
+
+                <Spinner
+                    android:id="@+id/deppartmentSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:dropDownSelector="@color/colorAccent"
+                    android:background="@drawable/button_bg"
+                    android:spinnerMode="dropdown"
+                    android:layout_marginTop="10dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:visibility="visible"
+                android:id="@+id/sessionLayout">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:text="Session"
+                    android:textSize="18sp"/>
+
+                <Spinner
+                    android:id="@+id/sessionSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:dropDownSelector="@color/colorAccent"
+                    android:background="@drawable/button_bg"
+                    android:spinnerMode="dropdown"
+                    android:layout_marginTop="10dp"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/InfoSubmitButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/loginbutton_bg"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/test"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
